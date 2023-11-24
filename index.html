@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> form </title> 
+</head>
+<body>
+    <div>
+        <form action="/abc.html" method="get">
+            <h5>Latin text </h5>
+            <p>Fo<u>n</u>t:</p>
+            <p>Ad<u>v</u>anced:</p>
+            <div class="mycontainer">
+                <div>
+                    <label for="fontSelector"> <u>F</u>ont:</label><br>
+                    <select id="fontSelector" >
+                        <option value="Arial, sans-serif">Arial</option>
+                        <option value="Times New Roman, serif">Times New Roman</option>
+                        <option value="Courier New, monospace">Courier New</option>
+                        <option value="Georgia, serif">Georgia</option>
+                        <option value="Verdana, sans-serif">Verdana</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="styleSelector">font St<u>y</u>le:</label> <br>
+                    <select id="styleSelector"  size="3">
+                        <option value="normal">Regular</option>
+                        <option value="italic">Italic</option>
+                        <option value="oblique">Bold</option>
+                        <option value="oblique">Oblique</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="sizeSelector"><u>S</u>ize:</label><br>
+                    <select id="sizeSelector" size="3">
+                        <option value="12px">12</option>
+                        <option value="16px">16</option>
+                        <option value="20px">20</option>
+                        <option value="24px">24</option>
+                        <option value="28px">28</option>
+                    </select>
+                </div>
+            </div>
+            <br><br>
+            <h5>Complex Script</h5>
+            <div class="mycontainer">
+                <div>
+                    <label for="fontSelector">Fon<u>t</u>:</label>
+                    <select id="Selector" >
+                        <option value="Arial, sans-serif">Arial</option>
+                        <option value="Times New Roman, serif">Times New Roman</option>
+                        <option value="Courier New, monospace">Courier New</option>
+                        <option value="Georgia, serif">Georgia</option>
+                        <option value="Verdana, sans-serif">Verdana</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="styleSelector">fo<u>n</u>t Style:</label>
+                    <select id="Selector" >
+                        <option value="normal">Regular</option>
+                        <option value="italic">Italic</option>
+                        <option value="oblique">Bold</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="sizeSelector">Si<u>z</u>e:</label>
+                    <select id="Selector">
+                        <option value="12px">12</option>
+                        <option value="16px">16</option>
+                        <option value="20px">20</option>
+                        <option value="24px">24</option>
+                        <option value="28px">28</option>
+                    </select>
+                </div>
+            </div>
+            <br><br>
+            <h5>All Text </h5>
+            <div class="mycontainer">
+                <div>
+                    <label for="styleSelector">font <U>c</U>olor:</label><br>
+                    <select onchange="this.className=this.options[this.selectedIndex].className" class="greenText">
+                        <option class="greenText" value=""></option>
+                        <option class="redText" value=""></option>
+                        <option class="blackText" value=""></option>
+                        <option class="blueText" value=""></option>
+                    </select>
+                </div>
+                <div>
+                    <label for="styleSelector"> <u>U</u>nderline style:</label><br>
+                    <select>
+                        <option style="text-decoration: underline;">(none) </option>
+                        <option>one </option>
+                        <option>two</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="sizeSelector"><u>U</u>nderline Color:</label><br>
+                    <select>
+                        <option>single line </option>
+                        <option>double line</option>
+                    </select>
+                </div>
+            </div>
+            <br><br>
+            <h5>Effect</h5>
+
+            <div class="mycontainer">
+                <div>
+                    <input type="checkbox" id=" Strikethrough" name=" Strikethrough" value="">
+                    <label for=" Strikethrough"> Stri<u>k</u>ethrough</label><br>
+                    <input type="checkbox" id=" DoubleStrikethrough" name=" DoubleStrikethrough" value="">
+                    <label for=" DoubleStrikethrough"> Doub<u>l</u>eStrikethrough</label><br>
+                    <input type="checkbox" id=" Superscript" name=" Superscript" value="">
+                    <label for=" Superscript"> Su<u>p</u>erscript</label><br>
+                    <input type="checkbox" id=" Subscript" name=" Subscript" value="">
+                    <label for=" Subscript"> <u>S</u>ubscript</label><br>
+                    <input type="checkbox" id=" Smallcaps" name=" Smallcaps" value="">
+                    <label for=" Smallcaps"> S<u>m</u>allcaps</label> <br>
+                    <input type="checkbox" id=" Allcaps" name=" Allcaps" value="">
+                    <label for=" Allcaps"> <u>A</u>llcaps</label><br>
+                    <input type="checkbox" id=" Hidden" name=" Hidden" value="">
+                    <label for=" Hidden"> <u>H</u>idden</label><br>
+                </div>
+            </div>
+            <h4>Preview</h4>
+            <div class="myDiv">
+                <h2 style="FLOAT: LEFT;">SAMPLE</h2>
+                <H2>
+                    <p>नमूना</p>
+                </H2>
+            </div>
+            <H3>THIS IS TRUE TYPE FONT.THIS FONT WILL BE USED ON BOTH PRINTER AND SCREEN </H3>
+            <button type="button">Set as <u>d</u>efault</button>
+            <button type="button">Text <u>E</u>ffect</button>
+            <button type="button" style=" float: right;">OK</button>
+            <button type="button" style=" float: right;">CANCEL</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
